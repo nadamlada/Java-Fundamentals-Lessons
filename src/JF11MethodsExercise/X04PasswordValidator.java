@@ -1,4 +1,4 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
 /*
 Write a program that checks if a given password is valid. Password rules are:
@@ -16,7 +16,6 @@ import java.util.Scanner;
 public class X04PasswordValidator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String input = scanner.nextLine();
 
         sixToTenCharacters(input);
@@ -44,17 +43,14 @@ public class X04PasswordValidator {
         if ((digitsCount) && (onlyDigitsAndLetters) && (sixToTenCharacters)) {
             System.out.println("Password is valid");
         }
-
     }
 
     private static boolean sixToTenCharacters(String input) {
-
         int length = input.length();
         return (6 <= length && length <= 10);
     }
 
     private static boolean onlyDigitsAndLetters(String input) {
-
         String lowerText = input.toLowerCase();
 
         for (char i = 0; i < input.length(); i++) {
@@ -63,14 +59,12 @@ public class X04PasswordValidator {
             if ((element < 48 || element > 57) && (element < 97 || element > 122)) {
                 return false;
             }
-
         }
 
         return true;
     }
 
     private static boolean digitsCount(String input) {
-
         String lowerText = input.toLowerCase();
         int counter = 0;
         for (char i = 0; i < input.length(); i++) {
