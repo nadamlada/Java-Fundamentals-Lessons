@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsLab;
+package JF01BasicSyntaxConditionalStatementsAndLoopsLab;
 
 /*
 Modify the above program, so it will print "Failed!" if the grade is lower than 3.00.
