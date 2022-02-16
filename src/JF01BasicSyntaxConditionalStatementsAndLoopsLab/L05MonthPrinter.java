@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsLab;
+package JF01BasicSyntaxConditionalStatementsAndLoopsLab;
 
 /*
 Write a program, which takes an integer from the console and prints the corresponding month.
