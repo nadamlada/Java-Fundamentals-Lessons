@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsLab;
+package JF01BasicSyntaxConditionalStatementsAndLoopsLab;
 
 /*
 Write a program, which prints the language, that a given country speaks. You can receive only the following combinations:
