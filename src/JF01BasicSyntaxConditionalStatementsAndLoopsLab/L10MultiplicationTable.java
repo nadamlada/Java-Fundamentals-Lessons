@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsLab;
+package JF01BasicSyntaxConditionalStatementsAndLoopsLab;
 
 /*
 You will receive an integer as input from the console. Print the 10 times table for this integer. See the examples below for more information.
