@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsLab;
+package JF01BasicSyntaxConditionalStatementsAndLoopsLab;
 /*
 Rewrite your program, so it can receive the multiplier from the console. Print the table from the given multiplier to 10. If the given multiplier is more than 10 - print only one row with the integer, the given multiplier, and the product. See the examples below for more information.
 Output
