@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsExercise;
+package JF02BasicSyntaxConditionalStatementsAndLoopsExercise;
 
 /*
 1.	Ages
