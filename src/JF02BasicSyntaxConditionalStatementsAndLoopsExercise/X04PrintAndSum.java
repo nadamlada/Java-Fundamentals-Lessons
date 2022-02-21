@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsExercise;
+package JF02BasicSyntaxConditionalStatementsAndLoopsExercise;
 
 /*
 Write a program to display numbers from given start to given end and their sum. All the numbers will be integers.
