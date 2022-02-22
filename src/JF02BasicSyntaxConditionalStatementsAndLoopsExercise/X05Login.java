@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsExercise;
+package JF02BasicSyntaxConditionalStatementsAndLoopsExercise;
 
 /*
 You will be given a string representing a username. The password will be that username reversed.
