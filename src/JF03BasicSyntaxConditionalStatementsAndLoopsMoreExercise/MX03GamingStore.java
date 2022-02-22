@@ -1,4 +1,4 @@
-package JF03_BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
+package JF03BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
 
 /*
 Write a program, which helps you buy the games. The valid games are the following games in this table:
@@ -25,7 +25,6 @@ public class MX03GamingStore {
         Scanner scanner = new Scanner(System.in);
 
         double allMoney = Double.parseDouble(scanner.nextLine());
-
         String input = scanner.nextLine();
         double spent = 0;
         boolean foundGame = false;
@@ -109,8 +108,10 @@ public class MX03GamingStore {
             if (tooExpensive) {
                 System.out.printf("Too Expensive%n");
             }
+
             input = scanner.nextLine();
         }
+
         if (allMoney > 0) {
             System.out.printf("Total spent: $%.2f. Remaining: $%.2f", spent, allMoney);
         } else {
