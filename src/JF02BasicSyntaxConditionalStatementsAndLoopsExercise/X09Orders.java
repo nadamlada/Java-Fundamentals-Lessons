@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsExercise;
+package JF02BasicSyntaxConditionalStatementsAndLoopsExercise;
 
 /*
 We are placing N orders at a time. You need to calculate the price on the following formula:
