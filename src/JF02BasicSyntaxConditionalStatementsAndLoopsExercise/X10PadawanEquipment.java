@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsExercise;
+package JF02BasicSyntaxConditionalStatementsAndLoopsExercise;
 
 /*
 Yoda is starting his newly created Jedi academy. So, he asked Master George Lucas to buy the needed equipment. The number of items depends on how many students will sign up. The equipment for the Padawan contains lightsabers, belts, and robes.
