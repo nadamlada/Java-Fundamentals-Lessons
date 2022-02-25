@@ -1,4 +1,4 @@
-package JF_MoreExerciseBasicSyntaxConditionalStatementsAndLoops;
+package JF03_BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
 
 /*
 Write a method that returns the English name of the last digit of a given number. Write a program that reads an integer and prints the returned value from this method.
