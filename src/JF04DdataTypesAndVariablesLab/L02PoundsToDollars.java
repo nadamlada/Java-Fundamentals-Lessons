@@ -1,4 +1,4 @@
-package JFDdataTypesAndVariablesLab;
+package JF04DdataTypesAndVariablesLab;
 
 /*
 Write a program that converts British pounds to US dollars formatted to the 3rd decimal point.
