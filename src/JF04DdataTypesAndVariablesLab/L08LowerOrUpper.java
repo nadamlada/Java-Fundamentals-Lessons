@@ -1,4 +1,4 @@
-package JFDdataTypesAndVariablesLab;
+package JF04DdataTypesAndVariablesLab;
 
 /*
 Write a program that prints whether a given character is upper-case or lower-case.
