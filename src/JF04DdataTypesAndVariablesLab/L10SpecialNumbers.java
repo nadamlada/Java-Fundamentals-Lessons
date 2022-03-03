@@ -1,4 +1,4 @@
-package JFDdataTypesAndVariablesLab;
+package JF04DdataTypesAndVariablesLab;
 
 /*
 A number is special when its sum of digits is 5, 7, or 11.
