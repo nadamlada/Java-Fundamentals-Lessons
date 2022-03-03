@@ -1,4 +1,4 @@
-package JFDdataTypesAndVariablesLab;
+package JF04DdataTypesAndVariablesLab;
 
 /*
 You are given a working code that finds the volume of a pyramid. However, you should consider that the variables exceed their optimum span and have improper naming. Also, search for variables that have multiple purposes.
