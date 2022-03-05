@@ -1,4 +1,4 @@
-package JFDdataTypesAndVariablesLab;
+package JF04DdataTypesAndVariablesLab;
 /*
 You are given a working code that is a solution to Problem 9. Special Numbers. However, the variables are improperly named, declared before they are needed and some of them are used for multiple things. Without using your previous solution, modify the code so that it is easy to read and understand.
 Hints
