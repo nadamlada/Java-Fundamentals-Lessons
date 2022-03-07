@@ -1,4 +1,4 @@
-package JFBasicSyntaxConditionalStatementsAndLoopsLab;
+package JF01BasicSyntaxConditionalStatementsAndLoopsLab;
 /*
 You will be given 3 lines of input – student name, age, and average grade. Your task is to print all the info about
 the student in the following format: "Name: {student name}, Age: {student age}, Grade: {student grade}".
