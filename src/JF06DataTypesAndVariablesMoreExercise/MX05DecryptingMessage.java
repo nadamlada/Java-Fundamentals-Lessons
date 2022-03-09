@@ -1,4 +1,4 @@
-package JF06_DataTypesAndVariablesMoreExercise;
+package JF06DataTypesAndVariablesMoreExercise;
 
 /*
  You will receive a key (integer) and n characters afterward. Add the key to each of the characters and append them to the message. At the end print the message, which you decrypted.
@@ -23,16 +23,13 @@ public class MX05DecryptingMessage {
 
         int key = Integer.parseInt(scanner.nextLine());
         int n = Integer.parseInt(scanner.nextLine());
-
         String text = "";
-        for (int i = 0; i < n; i++) {
 
+        for (int i = 0; i < n; i++) {
             String letter = scanner.nextLine();
             char letterChar = letter.charAt(0);             //превръщаме буквата от стринг в чар
-
             int decripted = letterChar + key;               // добавяме към чара инт
             char DecriptedChar = (char) decripted;          // прочитаме новоият инт като чар
-
             text += DecriptedChar;                          // добавяме чаровете в стринг
         }
 
