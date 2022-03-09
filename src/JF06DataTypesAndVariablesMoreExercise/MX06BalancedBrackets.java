@@ -1,4 +1,4 @@
-package JF06_DataTypesAndVariablesMoreExercise;
+package JF06DataTypesAndVariablesMoreExercise;
 
 /*
 You will receive n lines. On those lines, you will receive one of the following:
@@ -31,7 +31,6 @@ public class MX06BalancedBrackets {
         int arePairedCounter = 0;
 
         for (int i = 0; i < n; i++) {
-
             String input = scanner.nextLine();
             char symbol = input.charAt(0);
 
