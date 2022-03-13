@@ -1,4 +1,4 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
 
 /*
 Write a program that keeps track of the guests that are going to a house party.
@@ -15,9 +15,7 @@ import java.util.Scanner;
 public class X03HouseParty {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int input = Integer.parseInt(scanner.nextLine());
-
         List<String> output = new ArrayList<>();
 
         for (int i = 0; i < input; i++) {
