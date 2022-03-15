@@ -1,4 +1,4 @@
-package JF06_DataTypesAndVariablesMoreExercise;
+package JF06DataTypesAndVariablesMoreExercise;
 
 /*
 Write a program that safely compares floating-point numbers (double) with precision eps = 0.000001.
