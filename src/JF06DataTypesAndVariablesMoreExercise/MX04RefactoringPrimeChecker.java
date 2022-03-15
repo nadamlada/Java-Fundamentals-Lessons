@@ -1,4 +1,4 @@
-package JF06_DataTypesAndVariablesMoreExercise;
+package JF06DataTypesAndVariablesMoreExercise;
 
  /*
  You are given a program that checks if numbers in a given range [2...N] are prime.
@@ -30,6 +30,7 @@ public class MX04RefactoringPrimeChecker {
 
         for (int i = 2; i <= input; i++) {
             boolean isFound = true;
+
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
                     isFound = false;
