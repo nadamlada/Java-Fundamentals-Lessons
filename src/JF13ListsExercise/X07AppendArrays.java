@@ -1,4 +1,4 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
 
 /*
 Write a program to append several arrays of numbers.
