@@ -1,4 +1,4 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
 
 /*
 You will be given two hands of cards, which will be integer numbers. Assume that you have two players.
@@ -20,7 +20,6 @@ public class X06CardsGame {
         Scanner scanner = new Scanner(System.in);
 
         String firstInput = scanner.nextLine();
-
         List<Integer> first = new ArrayList<>();
         String[] fInput = firstInput.split(" ");
 
@@ -29,7 +28,6 @@ public class X06CardsGame {
         }
 
         String secondInput = scanner.nextLine();
-
         List<Integer> second = new ArrayList<>();
         String[] sInput = secondInput.split(" ");
 
@@ -38,10 +36,10 @@ public class X06CardsGame {
         }
 
         while (first.size() != 0 && second.size() != 0) {
+
             if (first.get(0) > second.get(0)) {
                 first.add(first.get(0));
                 first.add(second.get(0));
-
             } else if (second.get(0) > first.get(0)) {
                 second.add(second.get(0));
                 second.add(first.get(0));
@@ -53,22 +51,21 @@ public class X06CardsGame {
 
         //втория печели
         if (first.size() == 0) {
-
             System.out.printf("Second player wins! Sum: %d", sum(second));
 
             //първия печели
         } else if (second.size() == 0) {
-
             System.out.printf("First player wins! Sum: %d", sum(first));
         }
     }
 
     private static int sum(List<Integer> someList) {
-
         int sum = 0;
+
         for (int element : someList) {
             sum += element;
         }
+
         return sum;
     }
 }
