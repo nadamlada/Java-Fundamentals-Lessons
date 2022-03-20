@@ -1,4 +1,4 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
 
 /*
     You will be given numbers (list of integers) on the first input line. Until you receive "End" you will be given operations you have to apply on the list. The possible commands are:
@@ -17,9 +17,7 @@ import java.util.Scanner;
 public class X04ListOperations {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String input = scanner.nextLine();
-
         List<Integer> numbers = new ArrayList<>();
         String[] buffer = input.split("\\s+");
 
@@ -33,7 +31,6 @@ public class X04ListOperations {
             String[] commands = comm.split("\\s+");
 
             switch (commands[0]) {
-
                 case "Add":
                     int inputNumber = Integer.parseInt(commands[1]);
                     //number
@@ -51,6 +48,7 @@ public class X04ListOperations {
                     } else {
                         System.out.println("Invalid index");
                     }
+
                     break;
 
                 case "Remove":
@@ -62,6 +60,7 @@ public class X04ListOperations {
                     } else {
                         System.out.println("Invalid index");
                     }
+
                     break;
 
                 case "Shift":
@@ -75,6 +74,7 @@ public class X04ListOperations {
                                 numbers.add(numbers.get(0));
                                 numbers.remove(0);
                             }
+
                             break;
 
                         case "right":
@@ -85,6 +85,7 @@ public class X04ListOperations {
                                 //премахва последния елемент
                                 numbers.remove(numbers.size() - 1);
                             }
+
                             break;
                     }
 
