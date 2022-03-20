@@ -1,4 +1,4 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
 
 /*
 Write a program that reads a sequence of numbers and a special bomb number with a certain power.
@@ -14,9 +14,7 @@ import java.util.Scanner;
 public class X05BombNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String numbersInput = scanner.nextLine();
-
         List<Integer> numbers = new ArrayList<>();
         String[] buffer = numbersInput.split("\\s+");
 
