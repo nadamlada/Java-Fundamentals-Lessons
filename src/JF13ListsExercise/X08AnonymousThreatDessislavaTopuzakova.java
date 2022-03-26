@@ -1,4 +1,5 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
+
 /*
 Anonymous has created a cyber-hyper virus that steals data from the CIA. You, as the lead security developer in the CIA, have been tasked to analyze the software of the virus and observe its actions on the data. The virus is known for its innovative and unbelievably clever technique of merging and dividing data into partitions.
 You will receive a single input line containing STRINGS separated by spaces.
@@ -56,9 +57,11 @@ public class X08AnonymousThreatDessislavaTopuzakova {
                 if (startIndex < 0) {
                     startIndex = 0;
                 }
+
                 if (endIndex > names.size() - 1) {
                     endIndex = names.size() - 1;
                 }
+
                 //проверка за индексите
                 boolean isStartIndexValid = isValidIndex(startIndex, names.size());
                 boolean isEndIndexValid = isValidIndex(endIndex, names.size());
@@ -67,15 +70,17 @@ public class X08AnonymousThreatDessislavaTopuzakova {
                 if (isStartIndexValid && isEndIndexValid) {
                     //{abc, def, ghi} -> merge 0 1 -> {abcdef, ghi}
                     StringBuilder resultMerge = new StringBuilder();
+
                     for (int index = startIndex; index <= endIndex; index++) {
                         resultMerge.append(names.get(index));
                     }
+
                     for (int index = startIndex; index <= endIndex; index++) {
                         names.remove(startIndex);
                     }
+
                     names.add(startIndex, resultMerge.toString());
                 }
-
             } else if (commandName.equals("divide")) {
                 int index = Integer.parseInt(commandData[1]);
                 int partitions = Integer.parseInt(commandData[2]);
@@ -102,7 +107,6 @@ public class X08AnonymousThreatDessislavaTopuzakova {
     }
 
     public static boolean isValidIndex(int index, int size) {
-
         return index >= 0 && index <= size - 1;
     }
 }
