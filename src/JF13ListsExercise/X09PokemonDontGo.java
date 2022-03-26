@@ -1,4 +1,4 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
 
 /*
 You will receive a sequence of integers, separated by spaces - the distances to the Pokémons.
@@ -32,7 +32,6 @@ public class X09PokemonDontGo {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         List<Integer> distToPoke = new ArrayList<>();
         String[] buffer = input.split("\\s+");
 
@@ -57,7 +56,6 @@ public class X09PokemonDontGo {
                 int lastElement = distToPoke.get(distToPoke.size() - 1);
                 distToPoke.set(0, lastElement);
                 calculations(distToPoke, removed);
-
             } else if (index > distToPoke.size() - 1) {
                 //премахни последния
                 //сложи първия на мястото на последния
@@ -67,7 +65,6 @@ public class X09PokemonDontGo {
                 int firstElement = distToPoke.get(0);
                 distToPoke.set(distToPoke.size() - 1, firstElement);
                 calculations(distToPoke, removed);
-
             } else if (index >= 0 && index < distToPoke.size()) {
                 //премахни елемента на индекс  index
                 //+- (1. елементите, които са <= от премахнатия ги увеличаваме със ст-та премахнатия
@@ -87,10 +84,10 @@ public class X09PokemonDontGo {
     private static void calculations(List<Integer> distToPoke, int removed) {
 
         for (int i = 0; i < distToPoke.size(); i++) {
+
             if (distToPoke.get(i) <= removed) {
                 int increased = distToPoke.get(i) + removed;
                 distToPoke.set(i, increased);
-
             } else if (distToPoke.get(i) > removed) {
                 int decreased = distToPoke.get(i) - removed;
                 distToPoke.set(i, decreased);
