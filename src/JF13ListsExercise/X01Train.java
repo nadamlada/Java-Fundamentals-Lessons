@@ -1,4 +1,4 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
 
 /*
 On the first line, you will be given a list of wagons (integers). Each integer represents the number of passengers that are currently in each wagon. On the next line, you will get the max capacity of each wagon (single integer).
