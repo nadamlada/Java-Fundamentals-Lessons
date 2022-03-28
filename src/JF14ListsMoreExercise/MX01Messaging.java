@@ -1,4 +1,4 @@
-package JF15ListsMoreExercise;
+package JF14ListsMoreExercise;
 
 /*
 You will be given some list of numbers and a string. For each element of the list you have to take the sum of its
@@ -51,17 +51,19 @@ public class MX01Messaging {
             while (sum > lenghtOfText) {
                 sum = sum - lenghtOfText;
             }
+
             // като намерим кой елемент съответства на сум, да го изтрием
             List<String> trimmedText = new ArrayList<>();
 
             for (int j = 0; j < sum; j++) {
                 trimmedText.add(text.charAt(j) + "");
             }
+
             for (int j = sum + 1; j < text.length(); j++) {
                 trimmedText.add(text.charAt(j) + "");
             }
-            String trimmedElement = text.charAt(sum) + "";
 
+            String trimmedElement = text.charAt(sum) + "";
             text = String.join("", trimmedText);
 
             //за следващия интекс текста ще е с един символ по-къс
