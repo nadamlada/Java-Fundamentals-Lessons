@@ -1,4 +1,4 @@
-package JF14ListsExercise;
+package JF13ListsExercise;
 
 /*
 You are tasked to help plan the next Programming Fundamentals course by keeping track of the lessons, that are going to be included in the course, as well as all the exercises for the lessons.
@@ -27,7 +27,6 @@ public class X10SoftUniCoursePlanning {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         List<String> themes = new ArrayList<>();
         String[] buffer = input.split(", ");
 
@@ -71,6 +70,8 @@ public class X10SoftUniCoursePlanning {
                     if (themes.get(indexLesson + 1).equals(lessonTitle + "-Exercise ")) {
                         themes.remove(indexLesson + 1);
                     }
+
+
                     break;
 
                 case "Swap":
@@ -101,6 +102,8 @@ public class X10SoftUniCoursePlanning {
                             themes.add(themes.indexOf(lessonTitleNext) + 1, exerciseNext);
                         }
                     }
+
+
                     break;
 
                 case "Exercise":
@@ -120,6 +123,8 @@ public class X10SoftUniCoursePlanning {
                         themes.add(lessonTitle);
                         themes.add(lessonTitle + "-Exercise ");
                     }
+
+
                     break;
             }
 
@@ -128,8 +133,7 @@ public class X10SoftUniCoursePlanning {
 
         int counter = 0;
 
-        for (
-                String theme : themes) {
+        for (String theme : themes) {
             counter++;
             System.out.println(counter + "." + theme);
         }
