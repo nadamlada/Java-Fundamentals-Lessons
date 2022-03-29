@@ -1,4 +1,4 @@
-package JF13ListsLab;
+package JF12ListsLab;
 
 /*
 Now we will implement more complicated list commands. Again, read a list, and until you receive "end" read commands:
