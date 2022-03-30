@@ -1,4 +1,4 @@
-package JF15ListsMoreExercise;
+package JF14ListsMoreExercise;
 
  /*
  Write a program that mixes up two lists by some rules. You will receive two lines of input, each one being a list of numbers. The rules for mixing are:
@@ -25,7 +25,6 @@ public class MX04MixedUpLists {
         Collections.reverse(second);
 
         List<Integer> combined = new ArrayList<>();
-
         int lengthOfBoth = Math.min(first.size(), second.size());
 
         for (int i = 0; i < lengthOfBoth; i++) {
@@ -54,9 +53,7 @@ public class MX04MixedUpLists {
 
         combined.add(startCount);
         combined.add(endCount);
-
         Collections.sort(combined);
-
         List<Integer> forPrint = new ArrayList<>();
 
         for (int i = 0; i < combined.size(); i++) {
