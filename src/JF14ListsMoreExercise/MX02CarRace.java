@@ -1,4 +1,4 @@
-package JF15ListsMoreExercise;
+package JF14ListsMoreExercise;
 
 /*
 Write a program to calculate the winner of a car race. You will receive an array of numbers. Each element of the array represents
@@ -20,16 +20,15 @@ public class MX02CarRace {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         List<Integer> times = new ArrayList<>();
         String[] buffer = input.split("\\s+");
 
         for (String s : buffer) {
             times.add(Integer.parseInt(s));
         }
+
         //по толкова елемента събираш от ляво и от дясно
         int qtyElements = times.size() / 2;
-
         List<Integer> first = new ArrayList<>();
         List<Integer> second = new ArrayList<>();
 
@@ -50,7 +49,6 @@ public class MX02CarRace {
     }
 
     private static double getSum(List<Integer> first) {
-
         double sumFirst = 0;
 
         for (int i = 0; i < first.size(); i++) {
