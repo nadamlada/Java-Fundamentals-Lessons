@@ -1,4 +1,4 @@
-package JF15ListsMoreExercise;
+package JF14ListsMoreExercise;
 
 /*
 Gabsy is Orgolt's Final Revenge charming drummer. She has a drum set but the different drums have different origins – some she bought, some are gifts,
@@ -54,7 +54,6 @@ public class MX05DrumSet {
             int power = Integer.parseInt(commands);
 
             for (int i = 0; i < drums.size(); i++) {
-
                 drums.set(i, drums.get(i) - power);
 
                 if (drums.get(i) <= 0) {
