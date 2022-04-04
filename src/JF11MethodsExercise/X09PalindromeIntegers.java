@@ -1,4 +1,4 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
 /*
 A palindrome is a number that reads the same backward as forward, such as 323 or 1001. Write a program
@@ -11,7 +11,6 @@ import java.util.Scanner;
 public class X09PalindromeIntegers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String input = scanner.nextLine();
 
         while (!input.equals("END")) {
