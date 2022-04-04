@@ -1,4 +1,4 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
 /*
 Read an integer n from the console. Find all top numbers in the range [1 … n] and print them. A top number holds the following properties:
@@ -25,7 +25,6 @@ public class X10TopNumber {
     }
 
     private static boolean isSumOfDigitsDivisibleBy8(int input) {
-
         int sum = 0;
 
         while (input > 0) {
@@ -41,7 +40,6 @@ public class X10TopNumber {
     }
 
     private static boolean holdsOneOddDgit(int input) {
-
         //true -> има поне една нечетна
         while (input > 0) {
             //1. Взимам последната цифра
