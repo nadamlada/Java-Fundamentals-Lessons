@@ -1,4 +1,4 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
 /*
 Write a method that receives a single string and prints the count of the vowels. Use an appropriate name for the method.
@@ -17,8 +17,8 @@ public class X02VowelsCount {
     }
 
     private static void printTheCounOfVowels(String[] inputString) {
-
         int count = 0;
+
         for (int i = 0; i < inputString.length; i++) {
             if (inputString[i].equals("a")) {
                 count++;
@@ -46,7 +46,6 @@ public class X02VowelsCount {
         }
 
         System.out.println(count);
-
         return;
     }
 }
