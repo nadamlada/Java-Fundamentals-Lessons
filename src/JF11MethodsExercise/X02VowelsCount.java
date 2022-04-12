@@ -13,10 +13,10 @@ public class X02VowelsCount {
         String input = (scanner.nextLine()).toLowerCase();
         String[] inputString = input.split("");
 
-        printTheCounOfVowels(inputString);
+        printTheCountOfVowels(inputString);
     }
 
-    private static void printTheCounOfVowels(String[] inputString) {
+    private static void printTheCountOfVowels(String[] inputString) {
         int count = 0;
 
         for (int i = 0; i < inputString.length; i++) {
