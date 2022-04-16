@@ -1,4 +1,4 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
 /*
 Write a method that receives a single integer n and prints nxn matrix with that number.
@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class X07NxNMatrix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int n = Integer.parseInt(scanner.nextLine());
 
         printMatrix(n);
@@ -21,6 +20,8 @@ public class X07NxNMatrix {
             for (int j = 0; j < n; j++) {
                 System.out.print(n + " ");
             }
+
+
             System.out.println();
         }
     }
