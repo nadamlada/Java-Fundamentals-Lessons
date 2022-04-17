@@ -1,4 +1,4 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
 /*
 You will receive 3 integers. Write a method sum to get the sum of the first two integers and subtract the
