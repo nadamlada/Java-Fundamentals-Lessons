@@ -1,16 +1,15 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
- /*
- You will receive a single string. Write a method that prints the middle character.
- If the length of the string is even, there are two middle characters.
-  */
+/*
+You will receive a single string. Write a method that prints the middle character.
+If the length of the string is even, there are two middle characters.
+ */
 
 import java.util.Scanner;
 
 public class X06MiddleCharacters {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String input = scanner.nextLine();
 
         middleCharacters(input);
