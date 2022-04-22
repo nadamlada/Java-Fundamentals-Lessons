@@ -1,4 +1,4 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
 /*
 Write a method to print the smallest of three integer numbers. Use an appropriate name for the method.
@@ -19,7 +19,6 @@ public class X01SmallestOfThreeNumbers {
     }
 
     private static int smallestOfThreeNumbers(int a, int b, int c) {
-
         return Math.min(c, Math.min(a, b));
     }
 }
