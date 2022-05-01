@@ -1,10 +1,4 @@
-package JF26RegularExpressionsExercises;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+package JF27RegularExpressionsExercises;
 
 /*
 Write a program to calculate the total cost of different types of furniture. You will be given some lines of input until you receive the line "Purchase". For the line to be valid it should be in the following format:
@@ -15,8 +9,13 @@ The price can be a floating-point number or a whole number. Store the names of t
 {2nd name}
 …"
 And on the last line print, the following: "Total money spend: {spend money}" formatted to the second decimal point.
-
  */
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class X01Furniture {
     public static void main(String[] args) {
