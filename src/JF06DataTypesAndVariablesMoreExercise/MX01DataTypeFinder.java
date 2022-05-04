@@ -1,4 +1,5 @@
-package JF06_DataTypesAndVariablesMoreExercise;
+package JF06DataTypesAndVariablesMoreExercise;
+
 /*
 You will receive input until you receive "END". Find what data type is the input. Possible data types are:
 •	Integer
@@ -24,6 +25,7 @@ public class MX01DataTypeFinder {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
+
         while (!input.equals("END")) {
             int length = input.length();
             char charInput = input.charAt(0);
