@@ -1,4 +1,4 @@
-package JF05_DataTypesAndVariablesExercise;
+package JF05DataTypesAndVariablesExercise;
 
  /*
  Tony and Andi love playing in the snow and having snowball fights, but they always argue about which makes the best snowballs. They have decided to involve you in their fray, by making you write a program that calculates snowball data and outputs the best snowball value.
@@ -38,7 +38,6 @@ public class X11Snowballs {
         int MAXsnowballQuality = 0;
 
         for (int i = 0; i < n; i++) {
-
             double snowballSnow = Double.parseDouble(scanner.nextLine());
             double snowballTime = Double.parseDouble(scanner.nextLine());
             int snowballQuality = Integer.parseInt(scanner.nextLine());
