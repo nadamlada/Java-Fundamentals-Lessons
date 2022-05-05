@@ -1,4 +1,4 @@
-package JF20MapsLambdaAndStreamApiExercise;
+package JF21MapsLambdaAndStreamApiExercise;
 
 /*
 Write a program, which keeps the information about students and their grades.
