@@ -1,4 +1,4 @@
-package JF20MapsLambdaAndStreamApiExercise;
+package JF21MapsLambdaAndStreamApiExercise;
 
 /*
 SoftUni just got a new parking lot. It's so fancy, it even has online parking validation. Except, the online service doesn't work. It can only receive users' data but doesn't know what to do with it. Good thing you're on the dev team and know how to fix it, right?
@@ -44,6 +44,7 @@ public class X05SoftUniParking {
 
             if (command.equals("register")) {
                 String plate = input[2];
+
                 if (book.containsKey(user)) {
                     System.out.print("ERROR: already registered with plate number ");
                     System.out.println(plate);
@@ -53,6 +54,7 @@ public class X05SoftUniParking {
                 }
                 //unregister
             } else {
+
                 if (!book.containsKey(user)) {
                     System.out.printf("ERROR: user %s not found%n", user);
                 } else {
