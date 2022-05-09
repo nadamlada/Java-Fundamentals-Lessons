@@ -1,4 +1,5 @@
-package JF28ExamExersices;
+package JF29FinalExamExersices.EX01ProgrammingFundamentalsFinalExamRetake;
+
 /*
 During World War 2, you are a mathematician who has joined the cryptography team to decipher the enemy's enigma code.
 Your job is to create a program to crack the codes.
@@ -50,14 +51,12 @@ public class EX01TheImitationGame {
                     String buffer = encrypted.toString().replace(substring, replacement);
                     encrypted = new StringBuilder(buffer);
                     break;
-
             }
 
             input = scanner.nextLine();
-
         }
+
         System.out.print("The decrypted message is: ");
         System.out.println(encrypted);
-
     }
 }
