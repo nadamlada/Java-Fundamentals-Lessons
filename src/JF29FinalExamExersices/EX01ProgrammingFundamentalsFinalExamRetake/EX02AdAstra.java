@@ -1,4 +1,4 @@
-package JF28ExamExersices;
+package JF29FinalExamExersices.EX01ProgrammingFundamentalsFinalExamRetake;
 
 /*
 You are an astronaut who just embarked on a mission across the solar system. Since you will be in space for a long time, you have packed a lot of food with you. Create a program, which helps you identify how much food you have left and gives you information about its expiration date.
@@ -36,8 +36,8 @@ public class EX02AdAstra {
         Matcher matcher = pattern.matcher(input);
 
         List<String> dataLIst = new ArrayList<>();
-
         int sumCalories = 0;
+
         while (matcher.find()) {
             String item = matcher.group("item");
             String expire = matcher.group("expire");
