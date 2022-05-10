@@ -18,9 +18,7 @@ public class MX02FromLeftToTheRight {
             String input = scanner.nextLine();
             int lengthInput = input.length();
             String firstNum = "";
-
             int countDigitsFirst = 0;
-            int countDigistSecond = 0;
 
             for (int i = 0; i < lengthInput; i++) {
                 char first = input.charAt(i);
@@ -38,34 +36,31 @@ public class MX02FromLeftToTheRight {
             for (int j = countDigitsFirst + 1; j < lengthInput; j++) {
                 char second = input.charAt(j);
                 secondNum += second;
-                countDigistSecond++;
             }
 
             double parseFirst = Double.parseDouble(firstNum);
             double parseSecond = Double.parseDouble(secondNum);
-            int sumFirst = 0;
-            double firstMathAbs = Math.abs(parseFirst);
-
-            while (firstMathAbs > 0) {
-                double digit = firstMathAbs % 10;                             //взима последната цифра
-                sumFirst += digit;
-                firstMathAbs = firstMathAbs / 10;                           // премахваме последния диджит
-            }
-
-            int sumSecond = 0;
-            double secondMathAbs = Math.abs(parseSecond);
-
-            while (secondMathAbs > 0) {
-                double digit = secondMathAbs % 10;                        //взима последната цифра
-                sumSecond += digit;
-                secondMathAbs = secondMathAbs / 10;                       // премахваме последния диджит
-            }
+            int sum = 0;
 
             if (parseFirst > parseSecond) {
-                System.out.println(sumFirst);
+                double first = Math.abs(parseFirst);
+
+                while (first > 0) {
+                    double digit = first % 10;                             //взима последната цифра
+                    sum += digit;
+                    first /= 10;                                             // премахваме последния диджит
+                }
             } else {
-                System.out.println(sumSecond);
+                double second = Math.abs(parseSecond);
+
+                while (second > 0) {
+                    double digit = second % 10;
+                    sum += digit;
+                    second /= 10;
+                }
             }
+
+            System.out.println(sum);
         }
     }
 }
