@@ -31,7 +31,7 @@ public class X07WaterOverflow_Optimized {
 
         int n = Integer.parseInt(scanner.nextLine());
         int full = 0;
-        
+
         for (int i = 0; i < n; i++) {
             int newLiters = Integer.parseInt(scanner.nextLine());
             full += newLiters;
