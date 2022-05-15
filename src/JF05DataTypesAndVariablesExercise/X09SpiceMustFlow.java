@@ -1,4 +1,4 @@
-package JF05_DataTypesAndVariablesExercise;
+package JF05DataTypesAndVariablesExercise;
 
 /*
 9.	*Spice Must Flow
@@ -35,36 +35,10 @@ public class X09SpiceMustFlow {
             sumleaving += leaving;
             counter++;
         }
+
         if (sumleaving >= 26)
             leaving = sumleaving - 26;
 
         System.out.printf("%d%n%d", counter, leaving);
-
     }
 }
-/*
-
-///това работи
-{
-            int startingYield = int.Parse(Console.ReadLine());
-
-            int days = 0;
-            int spice = 0;
-            int realSpice = 0;
-            while (startingYield >= 100)
-            {
-                spice = startingYield;
-                days += 1;
-                spice -= 26;
-                realSpice += spice;
-                startingYield -= 10;
-            }
-            if (realSpice >= 26)
-            {
-                realSpice -= 26;
-            }
-            Console.WriteLine(days);
-            Console.WriteLine(realSpice);
-        }
-
- */
