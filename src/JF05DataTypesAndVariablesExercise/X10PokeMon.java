@@ -1,4 +1,4 @@
-package JF05_DataTypesAndVariablesExercise;
+package JF05DataTypesAndVariablesExercise;
 
 /*
 A Poke Mon is a special type of pokemon which likes to Poke others. But at the end of the day, the Poke Mon wants to keep statistics, about how many pokes it has managed to make.
@@ -54,8 +54,8 @@ public class X10PokeMon {
                     nAllPower /= y;
             }
         }
+
         System.out.printf("%d%n", nAllPower);
         System.out.println(counterPoked);
-
     }
 }
