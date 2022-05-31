@@ -31,7 +31,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class XNE04StarEnigma {
+public class X04StarEnigma {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
