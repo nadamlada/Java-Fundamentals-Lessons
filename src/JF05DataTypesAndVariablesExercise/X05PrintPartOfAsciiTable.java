@@ -1,4 +1,4 @@
-package JF05_DataTypesAndVariablesExercise;
+package JF05DataTypesAndVariablesExercise;
 
 /*
 Find online more information about ASCII (American Standard Code for Information Interchange) and write a program
@@ -23,6 +23,5 @@ public class X05PrintPartOfAsciiTable {
             char symbol = (char) i;
             System.out.printf("%c ", symbol);
         }
-
     }
 }
