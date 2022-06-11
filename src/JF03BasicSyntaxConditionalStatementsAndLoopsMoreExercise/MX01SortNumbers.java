@@ -1,4 +1,4 @@
-package JF03_BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
+package JF03BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
 
 /*
  Read three real numbers and sort them in descending order. Print each number on a new line.
