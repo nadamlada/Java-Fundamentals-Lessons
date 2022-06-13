@@ -1,4 +1,4 @@
-package JF13ListsLab;
+package JF12ListsLab;
 
 /*
 Write a program that reads a list of integers. Then until you receive "end", you will be given different commands:
