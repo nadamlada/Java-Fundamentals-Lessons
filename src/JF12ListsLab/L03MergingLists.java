@@ -1,4 +1,4 @@
-package JF13ListsLab;
+package JF12ListsLab;
 
 /*
 You are going to receive two lists with numbers. Create a result list that contains the numbers from both of the lists.
