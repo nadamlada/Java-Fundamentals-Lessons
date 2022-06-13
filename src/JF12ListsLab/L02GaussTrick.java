@@ -1,5 +1,5 @@
 
-package JF13ListsLab;
+package JF12ListsLab;
 
 /*
 Write a program that sum all numbers in a list in the following order:
