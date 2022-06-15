@@ -1,4 +1,5 @@
-package JF26RegularExpressionsExercises;
+package JF27RegularExpressionsExercises;
+
 /*
 Write a program that processes information about a race. On the first line, you will be given a list of participants
 separated by ", ". On the next few lines until you receive a line "end of race" you will be given some info which will
@@ -52,19 +53,19 @@ public class X02Race {
             int distance = 0;
 
             while (matcherPoints.find()) {
-               distance += Integer.parseInt(matcherPoints.group());
+                distance += Integer.parseInt(matcherPoints.group());
             }
 
             String nameString = name.toString();
 
-            if (catalog.containsKey(nameString)){
+            if (catalog.containsKey(nameString)) {
                 catalog.put(nameString, distance + catalog.get(nameString));
             }
 
             input = scanner.nextLine();
         }
 
-        //сортиране по Map Value;
+//        сортиране по Map Value;
 //        Map<Integer, String> print = new HashMap<>();
 //        print.put(1, "1st");
 //        print.put(2, "2nd");
@@ -81,10 +82,12 @@ public class X02Race {
 //                    savePlayer = entry.getKey();
 //                }
 //            }
+//
 //            System.out.printf("%s place: %s%n", print.get(counter + 1), savePlayer);
 //            catalog.remove(savePlayer);
 //            counter++;
 //        }
+//
 //        System.out.println();
 
         //1. сортираме по value (дистанция) в descending order
@@ -101,6 +104,5 @@ public class X02Race {
         System.out.println("1st place: " + firstThreeNames.get(0));
         System.out.println("2nd place: " + firstThreeNames.get(1));
         System.out.println("3rd place: " + firstThreeNames.get(2));
-
     }
 }
