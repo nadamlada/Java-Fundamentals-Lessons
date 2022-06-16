@@ -1,4 +1,4 @@
-package JF03_BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
+package JF03BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
 
 /*
 Write a program, which helps you buy the games. The valid games are the following games in this table:
