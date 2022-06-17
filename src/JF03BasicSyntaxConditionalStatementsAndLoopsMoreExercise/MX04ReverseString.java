@@ -1,4 +1,4 @@
-package JF03_BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
+package JF03BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
 
 /*
 Write a program that reverses a string and prints it on the console.
