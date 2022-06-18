@@ -1,4 +1,4 @@
-package JF05_DataTypesAndVariablesExercise;
+package JF05DataTypesAndVariablesExercise;
 
 /*
 Calculate how many courses will be needed to elevate n persons by using an elevator with a capacity of p persons.
@@ -15,7 +15,6 @@ public class X03Elevator {
         int capacity = Integer.parseInt(scanner.nextLine());
 
         int fullCourses = qtyPeople / capacity;              //колко човека са в пълен курс
-
         int lastCourse = qtyPeople % capacity;             //колко човека са в последния курс
 
         if (lastCourse > 0) {
