@@ -1,4 +1,4 @@
-package JF05_DataTypesAndVariablesExercise;
+package JF05DataTypesAndVariablesExercise;
 
 /*
 Read four integer numbers. Add first to the second, divide (integer) the sum by the third number,
