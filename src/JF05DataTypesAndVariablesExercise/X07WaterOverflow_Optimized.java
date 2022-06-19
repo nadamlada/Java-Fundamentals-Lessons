@@ -1,4 +1,4 @@
-package JF05_DataTypesAndVariablesExercise;
+package JF05DataTypesAndVariablesExercise;
 
  /*
  You have a water tank with a capacity of 255 liters.
@@ -30,11 +30,12 @@ public class X07WaterOverflow_Optimized {
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
-
         int full = 0;
+        
         for (int i = 0; i < n; i++) {
             int newLiters = Integer.parseInt(scanner.nextLine());
             full += newLiters;
+
             if (full > 255) {
                 System.out.println("Insufficient capacity!");
                 full -= newLiters;
