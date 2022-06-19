@@ -1,4 +1,4 @@
-package JF05_DataTypesAndVariablesExercise;
+package JF05DataTypesAndVariablesExercise;
 
 /*
 Write a program, which calculates the volume of n beer kegs.
@@ -26,17 +26,15 @@ public class X08BeerKegs {
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
-
         double biggestVolume = 0;
         String biggestType = "";
 
         for (int i = 0; i < n; i++) {
-
             String type = scanner.nextLine();
             double radius = Double.parseDouble(scanner.nextLine());
             double height = Double.parseDouble(scanner.nextLine());
-
             double volume = Math.PI * Math.pow(radius, 2) * height;
+
             if (volume > biggestVolume) {
                 biggestVolume = volume;
                 biggestType = type;
