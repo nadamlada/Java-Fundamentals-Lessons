@@ -1,4 +1,4 @@
-package JF11_MethodsExercise;
+package JF11MethodsExercise;
 
 /*
 Write a method that receives two characters and prints on a single line all the characters in between them according to ASCII.
@@ -12,7 +12,6 @@ public class X03CharactersInRange {
 
         String a = scanner.nextLine();
         String b = scanner.nextLine();
-
         char aa = a.charAt(0);
         char bb = b.charAt(0);
 
@@ -29,8 +28,7 @@ public class X03CharactersInRange {
 
         } else {
             for (char i = aa; i < bb; i++) {
-                if (i == aa) {
-                } else {
+                if (i != aa) {
                     System.out.print(i + " ");                              // или просто не принтираме първия чар
                 }
             }
