@@ -1,4 +1,4 @@
-package JF16ObjectsAndClassesLab;
+package JF17ObjectsAndClassesLab.students;
 
  /*
 Define a class Student, which holds the following information about students: first name, last name, age, and hometown.
@@ -55,39 +55,5 @@ public class L06Students {
             this.town = town;
         }
     }
-
-
-//    public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//
-//
-//        List<Student> studentsList = new ArrayList<>();
-//
-//        String input = scanner.nextLine();
-//        while (!input.equals("end")) {
-//            String[] dataArray = input.split(" ");
-//
-//            String firstName = dataArray[0];
-//            String lastName = dataArray[1];
-//            String age = dataArray[2];
-//            String town = dataArray[3];
-//
-//            Student student = new Student(firstName, lastName, age, town);
-//            studentsList.add(student);
-//
-//            input = scanner.nextLine();
-//        }
-//
-//        String searchedTown = scanner.nextLine();
-//
-//        for (Student s : studentsList) {
-//            if (s.getTown().equals(searchedTown)) {
-//                System.out.printf("%s %s is %s years old%n", s.getFirstName(), s.getLastName(), s.getAge());
-//            }
-//
-//        }
-//
-//    }
-
 }
 
