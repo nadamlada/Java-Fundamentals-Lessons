@@ -1,4 +1,4 @@
-package JF17ObjectsAndClassesExercise;
+package JF18ObjectsAndClassesExercise;
 
 /*
 Write a program that generates random fake advertisement messages to extol some product. The messages must consist of 4 parts: laudatory phrase + event + author + city. Use the following predefined parts:
