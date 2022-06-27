@@ -1,4 +1,4 @@
-package JF16ObjectsAndClassesLab;
+package JF17ObjectsAndClassesLab;
 
 /*
 Define a class Song, which holds the following information about songs: Type List, Name, and Time.
@@ -67,12 +67,15 @@ public class L04Songs {
         String typeList = scanner.nextLine();
 
         if (typeList.equals("all")) {
+
             for (Song song : songs) {
                 System.out.println(song.getName());
             }
 
         } else {
+
             for (Song song : songs) {
+
                 if (song.getTypeList().equals(typeList)) {
                     System.out.println(song.getName());
                 }
