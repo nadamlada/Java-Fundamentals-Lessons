@@ -1,4 +1,4 @@
-package JF17ObjectsAndClassesExercise;
+package JF18ObjectsAndClassesExercise;
 
 /*
 Write a program that receives n count of students and orders them by grade (in descending). Each student should have a
@@ -21,7 +21,6 @@ public class X05Students {
         private String firstName;
         private String secondName;
         private double grade;
-
 
         public Student(String firstName, String secondName, double grade) {
             this.firstName = firstName;
@@ -56,7 +55,9 @@ public class X05Students {
             Student student = new Student(firstName, secondName, grade);
             students.add(student);
         }
+
         students.sort(Comparator.comparing(Student::getGrade).reversed());
+
         for (Student student : students) {
             System.out.println(student);
         }
