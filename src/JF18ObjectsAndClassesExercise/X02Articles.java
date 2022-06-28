@@ -1,20 +1,20 @@
-package JF17ObjectsAndClassesExercise;
+package JF18ObjectsAndClassesExercise;
 
- /*
- Create an article class with the following properties:
- •	Title – a string
- •	Content – a string
- •	Author – a string
- The class should have a constructor and the following methods:
- •	Edit (new content) – change the old content with the new one
- •	ChangeAuthor (new author) – change the author
- •	Rename (new title) – change the title of the article
- •	override ToString – print the article in the following format:
- "{title} - {content}:{author}"
- Write a program that reads an article in the following format "{title}, {content}, {author}".
-  the next line, you will get a number n. On the next n lines, you will get one of the following commands:
-  "Edit: {new content}"; "ChangeAuthor: {new author}"; "Rename: {new title}". At the end, print the final article.
-  */
+/*
+Create an article class with the following properties:
+•	Title – a string
+•	Content – a string
+•	Author – a string
+The class should have a constructor and the following methods:
+•	Edit (new content) – change the old content with the new one
+•	ChangeAuthor (new author) – change the author
+•	Rename (new title) – change the title of the article
+•	override ToString – print the article in the following format:
+"{title} - {content}:{author}"
+Write a program that reads an article in the following format "{title}, {content}, {author}".
+ the next line, you will get a number n. On the next n lines, you will get one of the following commands:
+ "Edit: {new content}"; "ChangeAuthor: {new author}"; "Rename: {new title}". At the end, print the final article.
+ */
 
 import java.util.Scanner;
 
@@ -52,7 +52,6 @@ public class X02Articles {
         }
     }
 
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -72,9 +71,11 @@ public class X02Articles {
                 case "Edit":
                     article.setContent(commands[1]);
                     break;
+
                 case "ChangeAuthor":
                     article.setAuthor(commands[1]);
                     break;
+
                 case "Rename":
                     article.setTitle(commands[1]);
                     break;
