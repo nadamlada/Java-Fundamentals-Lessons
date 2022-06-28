@@ -1,4 +1,4 @@
-package JF17ObjectsAndClassesExercise;
+package JF18ObjectsAndClassesExercise;
 
 /*
 Using the Person class, write a program that reads from the console N lines of personal information and
@@ -35,19 +35,21 @@ public class X03OpinionPoll {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         List<Person> persons = new ArrayList<>();
         int n = Integer.parseInt(scanner.nextLine());
+
         for (int i = 0; i < n; i++) {
             String input = scanner.nextLine();
             String[] commands = input.split(" ");
             String name = commands[0];
             int age = Integer.parseInt(commands[1]);
             Person person = new Person(name, age);
+
             if (age > 30) {
                 persons.add(person);
             }
         }
+
         //сортиране по име в списъка
         persons.sort(Comparator.comparing(Person::getName));
 
