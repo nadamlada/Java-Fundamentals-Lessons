@@ -1,12 +1,12 @@
-package JF17ObjectsAndClassesExercise;
+package JF18ObjectsAndClassesExercise;
 
- /*
- Change the program from the second problem, so you can store a list of articles. You will not need the methods
- anymore (except the ToString method). On the first line, you will get a number n. On the next n lines,
- you will get some articles in the same format as the previous task ("{title}, {content}, {author}").
- Finally, you will get one of the three inputs: "title", "content", "author". You need to order the articles
- alphabetically based on the command and print them sorted by the given criteria.
-  */
+/*
+Change the program from the second problem, so you can store a list of articles. You will not need the methods
+anymore (except the ToString method). On the first line, you will get a number n. On the next n lines,
+you will get some articles in the same format as the previous task ("{title}, {content}, {author}").
+Finally, you will get one of the three inputs: "title", "content", "author". You need to order the articles
+alphabetically based on the command and print them sorted by the given criteria.
+ */
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -61,13 +61,12 @@ public class X04ArticleVer2 {
             ArticleTwo articlesTwo = new ArticleTwo(title, content, author);
             articles.add(articlesTwo);
         }
+
         String searched = scanner.nextLine();
         if (searched.equals("title")) {
             articles.sort(Comparator.comparing(ArticleTwo::getTitle));
-
         } else if (searched.equals("content")) {
             articles.sort(Comparator.comparing(ArticleTwo::getContent));
-
         } else if (searched.equals("author")) {
             articles.sort(Comparator.comparing(ArticleTwo::getAuthor));
         }
