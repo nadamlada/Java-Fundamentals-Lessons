@@ -1,4 +1,4 @@
-package JF19MapsLambdaAndStreamApiLab;
+package JF20MapsLambdaAndStreamApiLab;
 
 /*
 Read a list of real numbers and print them in ascending order along with their number of occurrences.
@@ -13,16 +13,17 @@ public class L01CountRealNumbers {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         //деклариране на дъбъл масив
         String[] items = input.split("\\s+");
         double[] numbers = new double[items.length];
+
         for (int i = 0; i < items.length; i++) {
             numbers[i] = Double.parseDouble(items[i]);
         }
 
         //TreeMap сортира по ключа
         Map<Double, Integer> countsNumberMap = new TreeMap<>();
+
         for (int i = 0; i < numbers.length; i++) {
             double currentNum = numbers[i];
 
