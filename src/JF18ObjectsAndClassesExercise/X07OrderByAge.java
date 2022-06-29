@@ -1,4 +1,4 @@
-package JF17ObjectsAndClassesExercise;
+package JF18ObjectsAndClassesExercise;
 
 /*
 You will receive an unknown number of lines. On each line, you will receive an array with 3 elements.
@@ -41,6 +41,7 @@ public class X07OrderByAge {
 
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
+
         while (!input.equals("End")) {
             String name = input.split(" ")[0];
             String id = input.split(" ")[1];
@@ -50,6 +51,7 @@ public class X07OrderByAge {
 
             input = scanner.nextLine();
         }
+
         persons.sort(Comparator.comparing(Person::getAge));
 
         for (Person person : persons) {
