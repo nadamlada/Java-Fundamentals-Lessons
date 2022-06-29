@@ -1,4 +1,4 @@
-package JF17ObjectsAndClassesExercise;
+package JF18ObjectsAndClassesExercise;
 
 /*
 You have to make a catalog for vehicles. You will receive two types of vehicles - a car or a truck.
@@ -30,12 +30,7 @@ public class X06VehicleCatalogue {
 
 
     public static class Vehicle {
-        /*
-        Type: {typeOfVehicle}
-        Model: {modelOfVehicle}
-        Color: {colorOfVehicle}
-        Horsepower: {horsepowerOfVehicle}
-         */
+
         String typeOfVehicle;
         String modelOfVehicle;
         String colorOfVehicle;
@@ -58,9 +53,11 @@ public class X06VehicleCatalogue {
 
         @Override
         public String toString() {
+
             if (this.typeOfVehicle.equals("car")) {
                 this.typeOfVehicle = "Car";
             }
+
             if (this.typeOfVehicle.equals("truck")) {
                 this.typeOfVehicle = "Truck";
             }
@@ -111,6 +108,7 @@ public class X06VehicleCatalogue {
         while (!input.equals("Close the Catalogue")) {
 
             for (Vehicle vehicle : vehicles) {
+
                 if (vehicle.getModelOfVehicle().equals(input)) {
                     System.out.println(vehicle);
                 }
