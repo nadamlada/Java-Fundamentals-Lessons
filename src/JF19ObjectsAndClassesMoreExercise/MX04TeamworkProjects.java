@@ -1,4 +1,5 @@
-package JF18ObjectsAndClassesMoreExercise;
+package JF19ObjectsAndClassesMoreExercise;
+
 /*
 It's time for teamwork projects and you are responsible for making the teams. First, you will receive an integer - the count of the teams you will have to register. You will be given a user and a team (separated with "-").  The user is the creator of that team.
 For every newly created team you should print a message:
@@ -17,7 +18,6 @@ Next, you will receive a user with the team (separated with "->") which means th
 "{teamName}:
  - {create}
  -- {member}..."
-
  */
 
 import java.util.*;
@@ -74,7 +74,6 @@ public class MX04TeamworkProjects {
 
             input = scanner.nextLine();
         }
-        //•	At the end (after teams' report) teams with zero members (with only a creator) should disband ordered by name in ascending other.
 
 //        teamsMembers.entrySet().stream()
 //                .sorted((e1, e2) -> Integer.compare(e2.getValue().size(),(e1.getValue().size())));
