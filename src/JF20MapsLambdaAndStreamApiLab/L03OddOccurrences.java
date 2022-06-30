@@ -1,4 +1,4 @@
-package JF19MapsLambdaAndStreamApiLab;
+package JF20MapsLambdaAndStreamApiLab;
 
 /*
 Write a program that extracts from a given sequence of words all elements that are present in it an odd number of times (case-insensitive).
