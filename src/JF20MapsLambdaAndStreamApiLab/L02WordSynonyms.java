@@ -1,4 +1,4 @@
-package JF19MapsLambdaAndStreamApiLab;
+package JF20MapsLambdaAndStreamApiLab;
 
 /*
 Write a program that keeps a map with synonyms. The key of the map will be the word. The value will be a list of all the synonyms of that word. You will be given a number n. On the next 2 * n lines you will be given a word and a synonym each on a separate line like this:
