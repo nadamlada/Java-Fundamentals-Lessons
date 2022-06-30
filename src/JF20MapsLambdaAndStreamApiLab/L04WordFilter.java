@@ -1,4 +1,5 @@
-package JF19MapsLambdaAndStreamApiLab;
+package JF20MapsLambdaAndStreamApiLab;
+
 /*
 Read an array of strings, take only words which length is even. Print each word on a new line.
  */
