@@ -1,4 +1,4 @@
-package JF19MapsLambdaAndStreamApiLab;
+package JF20MapsLambdaAndStreamApiLab;
 /*
 read list of numbers
 print largest 3, if there are less than 3, print all of them
