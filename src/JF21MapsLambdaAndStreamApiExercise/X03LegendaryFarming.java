@@ -1,4 +1,4 @@
-package JF20MapsLambdaAndStreamApiExercise;
+package JF21MapsLambdaAndStreamApiExercise;
 
 /*
 You are playing a game, and your goal is to win a legendary item - any legendary item will be good enough. However,
@@ -50,11 +50,13 @@ public class X03LegendaryFarming {
 
         while (!endGame) {
             String[] input = scanner.nextLine().split(" ");
+
             for (int i = 0; i < input.length - 1; i += 2) {
                 int qty = Integer.parseInt(input[i]);
                 String object = input[i + 1].toLowerCase();
 
                 if (object.equals("shards") || object.equals("fragments") || object.equals("motes")) {
+
                     if (!preciousItems.containsKey(object)) {
                         preciousItems.put(object, qty);
                     } else {
