@@ -1,4 +1,4 @@
-package JF20MapsLambdaAndStreamApiExercise;
+package JF21MapsLambdaAndStreamApiExercise;
 
 /*
 Until you receive the "stop" command, you will be given a sequence of strings, each on a new line. Every odd line on the console is representing
@@ -14,7 +14,6 @@ import java.util.Scanner;
 public class X02AMinerTask {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String resource = scanner.nextLine();
 
         Map<String, Integer> book = new LinkedHashMap<>();
@@ -27,6 +26,7 @@ public class X02AMinerTask {
 
             resource = scanner.nextLine();
         }
+
         for (Map.Entry<String, Integer> entry : book.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
