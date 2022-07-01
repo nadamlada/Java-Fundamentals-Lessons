@@ -1,4 +1,4 @@
-package JF20MapsLambdaAndStreamApiExercise;
+package JF21MapsLambdaAndStreamApiExercise;
 
 /*
 Write a program, which counts all characters in a string except space (' ').
@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class X01CountCharsInAString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String input = scanner.nextLine();
 
         Map<Character, Integer> collection = new LinkedHashMap<>();
@@ -22,9 +21,11 @@ public class X01CountCharsInAString {
 
         for (int i = 0; i < input.length(); i++) {
             char currentChar = input.charAt(i);
+
             if (currentChar == ' ') {
                 continue;
             }
+
             if (collection.containsKey(currentChar)) {
                 int existingValueOfKey = collection.get(currentChar);
                 collection.put(currentChar, existingValueOfKey + 1);
@@ -36,6 +37,7 @@ public class X01CountCharsInAString {
         for (Map.Entry<Character, Integer> entry : collection.entrySet()) {
             System.out.printf("%s -> %d%n", entry.getKey(), entry.getValue());
         }
+
         //друг вид печатане:
         //collection.forEach((key,value) -> System.out.printf("%s -> %d%n", key, value));
         //или
