@@ -1,4 +1,4 @@
-package JF21MapsLambdaAndStreamApiMoreExercise;
+package JF22MapsLambdaAndStreamApiMoreExercise;
 
 /*
 Here comes the final and the most interesting part - the Final ranking of the candidate-interns. The final ranking is determined by the points of the interview tasks and from the exams in SoftUni. Here is your final task. You will receive some lines of input in the format "{contest}:{password for contest}" until you receive "end of contests". Save that data because you will need it later. After that, you will receive another type of inputs in the format "{contest}=>{password}=>{username}=>{points}" until you receive "end of submissions". Here is what you need to do:
@@ -33,6 +33,7 @@ public class MX01Ranking {
         Map<String, Integer> userConcatCoursePoints = new TreeMap<>();
 
         String input = scanner.nextLine();
+
         while (!input.equals("end of contests")) {
             //"{contest}:{password for contest}"
 
@@ -59,6 +60,7 @@ public class MX01Ranking {
             //         Map<String, Integer> userConcatCoursePoints = new HashMap<>();
 
             if (contestsAndPass.containsKey(course)) {
+
                 if (contestsAndPass.get(course).equals(password)) {
                     String currentUserConcatCourse = (user + "+" + course);
 
@@ -107,6 +109,7 @@ public class MX01Ranking {
         for (Map.Entry<String, Integer> entry : reverseSortedMap.entrySet()) {
             int indexOfConcat = entry.getKey().indexOf("+");
             currentUser = entry.getKey().substring(0, indexOfConcat);
+
             if (!previousUser.equals(currentUser)) {
 
                 System.out.printf("%s%n", currentUser);
