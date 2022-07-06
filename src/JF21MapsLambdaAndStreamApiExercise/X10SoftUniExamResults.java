@@ -1,4 +1,4 @@
-package JF20MapsLambdaAndStreamApiExercise;
+package JF21MapsLambdaAndStreamApiExercise;
 
 /*
 Judge statistics on the last Programing Fundamentals exam were not working correctly, so you have the task to take all the submissions and analyze them properly. You should collect all the submissions and print the final results and statistics about each language that the participants submitted their solutions in.
@@ -55,12 +55,9 @@ public class X10SoftUniExamResults {
                     int maxPoints = Math.max(pointsInt, nameBook.get(user));
 
                     nameBook.put(user, maxPoints);
-
                     int currentPoints = nameBook.get(user);
-                    if (pointsInt < currentPoints) {
-                    }
-
                     break;
+
                 //banned
                 case 2:
                     nameBook.remove(user);
@@ -71,11 +68,13 @@ public class X10SoftUniExamResults {
         }
 
         System.out.println("Results:");
+
         for (Map.Entry<String, Integer> entry : nameBook.entrySet()) {
             System.out.printf("%s | %s%n", entry.getKey(), entry.getValue());
         }
 
         System.out.println("Submissions:");
+
         for (Map.Entry<String, List<String>> entry : languageBook.entrySet()) {
             numberOfUsers = entry.getValue().size() / 2;
             System.out.printf("%s - %d%n", entry.getKey(), numberOfUsers);
