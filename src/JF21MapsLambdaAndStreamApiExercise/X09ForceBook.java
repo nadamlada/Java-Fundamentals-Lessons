@@ -1,4 +1,4 @@
-package JF20MapsLambdaAndStreamApiExercise;
+package JF21MapsLambdaAndStreamApiExercise;
 
 /*
 The force users are struggling to remember which side is the different forceUsers from because they switch them too often. So you are tasked to create a web application to manage their profiles.
@@ -99,6 +99,7 @@ public class X09ForceBook {
     private static boolean isUserExists(Map<String, List<String>> book, String user) {
         //проверка дали юзъра го има
         boolean userExists = false;
+
         for (Map.Entry<String, List<String>> entry : book.entrySet()) {
             List<String> whereItIsNow = entry.getValue();
 
