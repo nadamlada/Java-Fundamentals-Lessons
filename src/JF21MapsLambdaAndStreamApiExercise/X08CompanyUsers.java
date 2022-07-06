@@ -1,4 +1,4 @@
-package JF20MapsLambdaAndStreamApiExercise;
+package JF21MapsLambdaAndStreamApiExercise;
 
 /*
 Write a program which keeps the information about companies and their employees.
@@ -19,7 +19,6 @@ import java.util.*;
 public class X08CompanyUsers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String input = scanner.nextLine();
 
         Map<String, List<String>> book = new LinkedHashMap<>();
@@ -47,6 +46,7 @@ public class X08CompanyUsers {
         for (Map.Entry<String, List<String>> entry : book.entrySet()) {
             System.out.println(entry.getKey());
             List<String> students = entry.getValue();
+
             for (String s : students) {
                 System.out.println("-- " + s);
             }
