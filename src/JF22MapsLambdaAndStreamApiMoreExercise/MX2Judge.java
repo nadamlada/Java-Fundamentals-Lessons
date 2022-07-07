@@ -1,4 +1,4 @@
-package JF21MapsLambdaAndStreamApiMoreExercise;
+package JF22MapsLambdaAndStreamApiMoreExercise;
 
 /*
 You know the Judge system, right?! Your job is to create a program similar to the Judge system.
@@ -29,10 +29,8 @@ import java.util.*;
 public class MX2Judge {
 
     public static void main(String[] args) {
-
-        Map<String, List<String>> gameContest = new LinkedHashMap();
-
         Scanner scanner = new Scanner(System.in);
+        Map<String, List<String>> gameContest = new LinkedHashMap();
 
         String input = scanner.nextLine();
 
