@@ -1,4 +1,4 @@
-package JF22TextProcessingLab;
+package JF23TextProcessingLab;
 
 /*
 You will be given a series of strings until you receive an "end" command. Write a program that reverses strings and prints
@@ -13,7 +13,9 @@ public class L01ReverseStrings {
         String text = scanner.nextLine();
 
         StringBuilder print = new StringBuilder();
+
         while (!text.equals("end")) {
+
             for (int i = text.length() - 1; i >= 0; i--) {
                 print.append(text.charAt(i));
             }
