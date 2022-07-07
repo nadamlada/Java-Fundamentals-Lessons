@@ -1,4 +1,4 @@
-package JF22TextProcessingLab;
+package JF23TextProcessingLab;
 
 /*
 On the first line, you will receive a string. On the second line, you will receive a second string.
