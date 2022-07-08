@@ -1,4 +1,4 @@
-package JF23TextProcessingExercise;
+package JF24TextProcessingExercise;
 
 /*
 Nakov likes Math. But he also likes the English alphabet a lot. He invented a game with numbers and letters from the
