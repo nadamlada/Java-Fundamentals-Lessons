@@ -1,4 +1,4 @@
-package JF22TextProcessingLab;
+package JF23TextProcessingLab;
 
 /*
 Write a program that takes a text and a string of banned words. All words included in the ban list should be replaced with asterisks "*",
