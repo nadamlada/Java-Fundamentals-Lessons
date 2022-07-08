@@ -1,10 +1,10 @@
-package JF22TextProcessingLab;
+package JF23TextProcessingLab;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class SplitAtAnuSymbol {
+public class SplitAtAnySymbol {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String text = "the quick brown fox jumps over the lazy dog";
@@ -14,10 +14,11 @@ public class SplitAtAnuSymbol {
         List<String> split = new ArrayList<>();
 
         for (int i = 0; i < text.length(); i++) {
+
             if (text.charAt(i) != separator) {
                 current.append(text.charAt(i));
 
-                //стигнала съм сепаратора
+                //когато е сепаратора
             } else {
                 //кърънт от стрингбилдър го правим в стринг
                 split.add(current.toString());
