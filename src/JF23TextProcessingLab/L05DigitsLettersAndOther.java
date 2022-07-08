@@ -1,4 +1,4 @@
-package JF22TextProcessingLab;
+package JF23TextProcessingLab;
 
 /*
 Write a program that receives a single string and on the first line prints all the digits, on the second – all the letters, and on the third –
@@ -17,6 +17,7 @@ public class L05DigitsLettersAndOther {
 
         for (int i = 0; i < text.length(); i++) {
             char current = text.charAt(i);
+
             if ((current >= 'a' && current <= 'z') || (current >= 'A' && current <= 'Z')) {
                 textString.append(current);
             } else if (current >= '0' && current <= '9') {
