@@ -1,4 +1,4 @@
-package JF23TextProcessingExercise;
+package JF24TextProcessingExercise;
 
 /*
 Write a program that reads user names on a single line (joined by ", ") and prints all valid usernames.
