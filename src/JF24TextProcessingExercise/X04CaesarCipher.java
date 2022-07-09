@@ -1,4 +1,4 @@
-package JF23TextProcessingExercise;
+package JF24TextProcessingExercise;
 
 /*
 Write a program that returns an encrypted version of the same text. Encrypt the text by shifting each character with
@@ -14,6 +14,7 @@ public class X04CaesarCipher {
         String text = scanner.nextLine();
 
         char[] newArr = text.toCharArray();
+
         for (char c : newArr) {
             c += 3;
             stringBuilder.append(c);
