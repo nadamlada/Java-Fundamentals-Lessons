@@ -1,4 +1,4 @@
-package JF23TextProcessingExercise;
+package JF24TextProcessingExercise;
 
 /*
 Create a method that takes two strings as arguments and returns the sum of their character codes multiplied
