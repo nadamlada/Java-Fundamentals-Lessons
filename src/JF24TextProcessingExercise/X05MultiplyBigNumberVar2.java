@@ -1,4 +1,4 @@
-package JF23TextProcessingExercise;
+package JF24TextProcessingExercise;
 /*
 You are given two lines – the first one can be a really big number (0 to 1050). The second one will be a single-digit number (0 to 9).
 You must display the product of these numbers.
@@ -8,7 +8,7 @@ Note: do not use the BigInteger class.
 
 import java.util.Scanner;
 
-public class X05MultiplyBigNumberPak {
+public class X05MultiplyBigNumberVar2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -20,8 +20,10 @@ public class X05MultiplyBigNumberPak {
         StringBuilder total = new StringBuilder();
 
         int reminder = 0;
+
         for (int i = 0; i < reversed.length(); i++) {
             int result = Integer.parseInt(reversed.charAt(i) + "") * multiplier + reminder;
+
             if (i == reversed.length() - 1) {
                 total.insert(0, result);
             } else {
