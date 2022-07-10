@@ -1,4 +1,5 @@
-package JF23TextProcessingExercise;
+package JF24TextProcessingExercise;
+
 /*
 Explosions are marked with ">". Immediately after the mark, there will be an integer, which signifies the strength of the explosion.
 You should remove x characters (where x is the strength of the explosion), starting after the punched character (">").
@@ -14,7 +15,6 @@ Constraints
 •	The path will consist only of letters from the Latin alphabet, integers, and the char ">".
 •	The strength of the punches will be in the interval [0…9].
 Examples
-
  */
 
 import java.util.Scanner;
