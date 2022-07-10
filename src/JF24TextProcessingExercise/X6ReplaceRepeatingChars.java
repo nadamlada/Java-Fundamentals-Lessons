@@ -1,4 +1,4 @@
-package JF23TextProcessingExercise;
+package JF24TextProcessingExercise;
 
 /*
 Write a program that reads a string from the console and replaces any sequence of the same letters with a single
