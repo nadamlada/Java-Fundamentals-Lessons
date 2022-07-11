@@ -1,4 +1,5 @@
-package JF24TextProcessingMoreExercise;
+package JF25TextProcessingMoreExercise;
+
 /*
 Write a program that reads n lines of strings and extracts the name and age of a given person.
 The name of the person will be between "@" and "|". The person’s age will be between "#" and "*".
