@@ -1,4 +1,5 @@
-package JF24TextProcessingMoreExercise;
+package JF25TextProcessingMoreExercise;
+
 /*
 Write a program that translates messages from Morse code to English (capital letters). Use this page to help you
 (without the numbers). The words will be separated by a space (' '). There will be a "|" character which you should
@@ -46,11 +47,14 @@ public class MX04MorseCodeTranslator {
         String input = scanner.nextLine();
 
         String[] texts = input.split("\\s\\|\\s");
+
         for (String text : texts) {
             String[] letters = text.split(" ");
+
             for (String letter : letters) {
                 translated.append(dictionary.get(letter));
             }
+
             translated.append(" ");
         }
 
