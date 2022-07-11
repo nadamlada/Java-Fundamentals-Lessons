@@ -1,4 +1,5 @@
-package JF24TextProcessingMoreExercise;
+package JF25TextProcessingMoreExercise;
+
 /*
 Write a program that decrypts a message by a given key and gathers information about hidden treasure type and its coordinates.
 On the first line, you will receive a key (sequence of numbers). On the next few lines until you receive "find" you will get
@@ -24,10 +25,13 @@ public class MX03TreasureFinder {
         while (!code.toString().equals("find")) {
 
             if (key.length() < code.length()) {
+
                 for (int i = 0; i < code.length(); i++) {
+
                     if (key.charAt(i) == ' ') {
                         key.deleteCharAt(i);
                     }
+
                     key.append(key.charAt(i));
                 }
             }
@@ -37,7 +41,6 @@ public class MX03TreasureFinder {
                 int currentKey = Integer.parseInt(keyString);
                 char currentChar = (char) (code.charAt(i) - currentKey);
                 code.setCharAt(i, currentChar);
-
             }
 
             // System.out.println(code);
