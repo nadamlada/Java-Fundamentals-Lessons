@@ -1,4 +1,5 @@
-package JF25RegularExpressionsLab;
+package JF26RegularExpressionsLab;
+
 /*
 Write a regular expression to match a valid phone number from Sofia. After you find all valid phones, print them on the console, separated by a comma and a space ", ".
 Compose the Regular Expression
@@ -13,7 +14,6 @@ You can use the following RegEx properties to help with the matching:
 •	Use a capturing group to make sure the delimiter is only one of the allowed characters (space or hyphen) and not a combination of both (e.g. +359 2-111 111 has mixed delimiters, it is invalid). Use a group back reference to achieve this.
 •	Add a word boundary at the end of the match to avoid partial matches (the last example on the right-hand side).
 •	Ensure that before the '+' sign there is either a space or the beginning of the string.
-
  */
 
 import java.util.ArrayList;
