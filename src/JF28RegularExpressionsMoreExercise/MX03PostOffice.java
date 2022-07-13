@@ -1,4 +1,4 @@
-package JF27RegularExpressionsMoreExercise;
+package JF28RegularExpressionsMoreExercise;
 
 /*
 You read a single line of ASCII symbols, and the message is somewhere inside it, you must find it.
@@ -61,7 +61,9 @@ public class MX03PostOffice {
             int length = Integer.parseInt(buff[1]);
 
             if (length >= 1 && length <= 20) {
+
                 if (map.containsKey((char) asciiCode)) {
+
                     //трябва ни първана намерена
                     if (map.get((char) asciiCode) == 0) {
                         map.put((char) asciiCode, 1 + length);
