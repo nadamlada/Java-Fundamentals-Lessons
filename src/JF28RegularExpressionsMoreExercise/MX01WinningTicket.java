@@ -1,4 +1,4 @@
-package JF27RegularExpressionsMoreExercise;
+package JF28RegularExpressionsMoreExercise;
 
 /*
 The lottery is exciting. What is not, is checking a million tickets for winnings only by hand. So, you are given the task to create a program that automatically checks if a ticket is a winner.
@@ -35,11 +35,9 @@ public class MX01WinningTicket {
         String regexValid = "@{6,10}|#{6,10}|\\${6,10}|\\^{6,10}";
 
         for (int i = 0; i < commands.length; i++) {
-
             String current = commands[i];
 
             if (current.length() == 20) {
-
                 String firstPart = current.substring(0, 10);
                 String secondPart = current.substring(10);
 
@@ -60,7 +58,6 @@ public class MX01WinningTicket {
                             System.out.printf("ticket \"%s\" - 10%c Jackpot!%n", current, first.charAt(0));
                         }
                     }
-
                 } else {
                     System.out.printf("ticket \"%s\" - no match%n", current);
                 }
