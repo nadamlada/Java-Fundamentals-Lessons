@@ -1,4 +1,5 @@
-package JF26RegularExpressionsExercises;
+package JF27RegularExpressionsExercises;
+
 /*
 A mighty battle is coming. In the stormy nether realms, demons are fighting against each other for supremacy in a duel from which only one will survive.
 Your job, however, is not so exciting. You are assigned to sign in all the participants in the nether realm's mighty battle's demon book.
@@ -61,9 +62,11 @@ public class X05NetherRealms {
             }
 
             for (int i = 0; i < name.length(); i++) {
+
                 if (name.charAt(i) == '*') {
                     sumD *= 2;
                 }
+
                 if (name.charAt(i) == '/') {
                     sumD /= 2;
                 }
