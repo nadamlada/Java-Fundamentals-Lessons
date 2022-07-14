@@ -1,4 +1,4 @@
-package JF28ExamExersices;
+package JF29FinalExamExersices.EX02ProgrammingFundamentalsFinalExam;
 
 /*
 You are a world traveler, and your next goal is to make a world tour. To do that, you have to plan out everything first.
@@ -30,23 +30,29 @@ public class EX01WorldTour {
 
         while (!command.equals("Travel")) {
             String[] commands = command.split(":");
+
             switch (commands[0]) {
                 case "Add Stop":
                     int index = Integer.parseInt(commands[1]);
+
                     if (isValidIndex(route, index)) {
                         String newString = commands[2];
                         route.insert(index, newString);
                     }
+
                     break;
 
                 case "Remove Stop":
                     int startIndex = Integer.parseInt(commands[1]);
                     int endIndex = Integer.parseInt(commands[2]);
+
                     if (isValidIndex(route, startIndex)) {
+
                         if (isValidIndex(route, endIndex)) {
                             route.delete(startIndex, endIndex + 1);
                         }
                     }
+
                     break;
 
                 case "Switch":
@@ -65,20 +71,25 @@ public class EX01WorldTour {
 //                        route.insert(index, newString);
 //                        index = route.indexOf(oldString);
 //                    }
+
                     break;
 
             }
+
             System.out.println(route);
             command = scanner.nextLine();
         }
+
         System.out.printf("Ready for world tour! Planned stops: %s", route);
     }
 
     public static boolean isValidIndex(StringBuilder route, int index) {
         boolean isValid = false;
+
         if (index >= 0 && index <= (route.length() - 1)) {
             isValid = true;
         }
+
         return isValid;
     }
 }
