@@ -1,4 +1,4 @@
-package JF28ExamExersices;
+package JF29FinalExamExersices.EX02ProgrammingFundamentalsFinalExam;
 
 /*
 Now that you have planned out your tour, you are ready to go! Your next task is to mark all the points on the map that you are going to visit.
@@ -33,6 +33,7 @@ public class EX02DestinationMapper {
         Matcher matcher = pattern.matcher(input);
         List<String> list = new ArrayList<>();
         List<Integer> points = new ArrayList<>();
+
         while (matcher.find()) {
             String destination = matcher.group("destination");
             list.add(destination);
