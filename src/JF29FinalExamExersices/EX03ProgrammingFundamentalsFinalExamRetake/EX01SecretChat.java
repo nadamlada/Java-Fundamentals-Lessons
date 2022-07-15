@@ -1,4 +1,4 @@
-package JF28ExamExersices;
+package JF29FinalExamExersices.EX03ProgrammingFundamentalsFinalExamRetake;
 
 /*
 You have plenty of free time, so you decide to write a program that conceals and reveals your received messages. Go ahead and type it in!
@@ -31,18 +31,19 @@ public class EX01SecretChat {
 
         while (!input.equals("Reveal")) {
             String[] commands = input.split(":\\|:");
+
             switch (commands[0]) {
                 case "InsertSpace":
                     int index = Integer.parseInt(commands[1]);
                     // Може би е интекс плюс едно
                     password.insert(index, " ");
-
                     System.out.println(password);
                     break;
 
                 case "Reverse":
                     StringBuilder subst = new StringBuilder(commands[1]);
                     index = password.indexOf(subst.toString());
+
                     if (index == -1) {
                         System.out.println("error");
                     } else {
@@ -51,6 +52,7 @@ public class EX01SecretChat {
                         password.append(subst.reverse());
                         System.out.println(password);
                     }
+
                     break;
 
                 case "ChangeAll":
@@ -58,6 +60,7 @@ public class EX01SecretChat {
                     String newSubstring = commands[1];
                     String replacement = commands[2];
                     index = password.indexOf(newSubstring);
+
                     while (index != -1) {
                         password.delete(index, index + newSubstring.length());
                         password.insert(index, replacement);
