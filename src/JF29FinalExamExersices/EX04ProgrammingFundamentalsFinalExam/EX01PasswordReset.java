@@ -1,6 +1,4 @@
-package JF28ExamExersices;
-
-import java.util.Scanner;
+package JF29FinalExamExersices.EX04ProgrammingFundamentalsFinalExam;
 
 /*
 Yet again, you have forgotten your password. Naturally, it's not the first time this has happened. Actually, you got so tired of it that you decided to help yourself with an intelligent solution.
@@ -22,6 +20,8 @@ Constraints
 •	The indexes from the "Cut {index} {length}" command will always be valid.
  */
 
+import java.util.Scanner;
+
 public class EX01PasswordReset {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -31,12 +31,15 @@ public class EX01PasswordReset {
 
         while (!input.equals("Done")) {
             String[] commands = input.split(" ");
+
             switch (commands[0]) {
                 case "TakeOdd":
                     StringBuilder newPassword = new StringBuilder();
+
                     for (int i = 1; i < password.length(); i += 2) {
                         newPassword.append(password.charAt(i));
                     }
+
                     password = newPassword;
                     System.out.println(password);
                     break;
@@ -54,25 +57,27 @@ public class EX01PasswordReset {
                 case "Substitute":
                     String substring = commands[1];
                     String substitute = commands[2];
-
                     int indexForSubstitute = password.indexOf(substring);
+
                     if (indexForSubstitute == -1) {
                         System.out.println("Nothing to replace!");
                     } else {
+
                         while (indexForSubstitute != -1) {
                             password.replace(indexForSubstitute, indexForSubstitute + substring.length(), substitute);
                             indexForSubstitute = password.indexOf(substring);
                         }
+
                         System.out.println(password);
                     }
 
                     break;
-
             }
+
             input = scanner.nextLine();
         }
+
         System.out.print("Your password is: ");
         System.out.println(password);
-
     }
 }
