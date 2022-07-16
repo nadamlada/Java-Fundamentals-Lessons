@@ -1,4 +1,4 @@
-package JF28ExamExersices;
+package JF29FinalExamExersices.EX05ProgrammingFundamentalsFinalExam;
 
 /*
 Your task is to write a program that extracts emojis from a text and find the threshold based on the input.
@@ -39,7 +39,6 @@ public class EX02EmojiDetector {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         String regex1 = "[0-9]";
         Pattern pattern1 = Pattern.compile(regex1);
         Matcher matcher1 = pattern1.matcher(input);
@@ -59,15 +58,16 @@ public class EX02EmojiDetector {
         int found = 0;
 
         while (matcher.find()) {
-            found ++;
+            found++;
             String valid = matcher.group("validString");
             String useThis = matcher.group();
-
             int sum = 0;
+
             for (int i = 0; i < valid.length(); i++) {
                 char currentChar = valid.charAt(i);
                 sum += currentChar;
             }
+
             if (sum > limit) {
                 map.put(useThis, limit);
             }
@@ -76,8 +76,8 @@ public class EX02EmojiDetector {
         }
 
         System.out.printf("Cool threshold: %d%n", limit);
-
         System.out.printf("%d emojis found in the text. The cool ones are:%n", found);
+
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
             System.out.println(entry.getKey());
         }
