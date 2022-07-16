@@ -1,4 +1,4 @@
-package JF28ExamExersices;
+package JF29FinalExamExersices.EX05ProgrammingFundamentalsFinalExam;
 
 /*
 You are about to make some good money, but first, you need to think of a way to verify who paid for your product and who didn't. You have decided to let people use the software for a free trial period and then require an activation key to continue using the product. Before you can cash out, the last step is to design a program that creates unique activation keys for each user. So, waste no more time and start typing!
@@ -29,21 +29,23 @@ public class EX01ActivationKeys {
         Scanner scanner = new Scanner(System.in);
 
         StringBuilder password = new StringBuilder(scanner.nextLine());
-
         boolean print = false;
         String input = scanner.nextLine();
 
         while (!input.equals("Generate")) {
             String[] inputs = input.split(">>>");
+
             switch (inputs[0]) {
                 case "Contains":
                     String substring = inputs[1];
+
                     if (password.toString().contains(substring)) {
                         //"{raw activation key} contains {substring}"
                         System.out.printf("%s contains %s%n", password, substring);
                     } else {
                         System.out.println("Substring not found!");
                     }
+
                     print = false;
                     break;
 
@@ -51,11 +53,13 @@ public class EX01ActivationKeys {
                     String command = inputs[1];
                     int startIndex = Integer.parseInt(inputs[2]);
                     int endIndex = Integer.parseInt(inputs[3]);
+
                     if (command.equals("Upper")) {
                         password.replace(startIndex, endIndex, password.substring(startIndex, endIndex).toUpperCase());
                     } else {
                         password.replace(startIndex, endIndex, password.substring(startIndex, endIndex).toLowerCase());
                     }
+
                     print = true;
                     break;
 
@@ -66,11 +70,14 @@ public class EX01ActivationKeys {
                     print = true;
                     break;
             }
+
             if (print) {
                 System.out.println(password);
             }
+
             input = scanner.nextLine();
         }
+
         System.out.printf("Your activation key is: %s", password);
     }
 }
