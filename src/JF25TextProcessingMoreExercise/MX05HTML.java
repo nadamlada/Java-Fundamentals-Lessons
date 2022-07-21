@@ -1,4 +1,5 @@
-package JF24TextProcessingMoreExercise;
+package JF25TextProcessingMoreExercise;
+
 /*
 You will receive 3 lines of input. On the first line, you will receive a title of an article. On the next line, you
 will receive the content of that article. On the next n lines until you receive "end of comments" you will get the
