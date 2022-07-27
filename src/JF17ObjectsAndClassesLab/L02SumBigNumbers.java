@@ -1,4 +1,4 @@
-package JF16ObjectsAndClassesLab;
+package JF17ObjectsAndClassesLab;
 
 /*
 You will receive two numbers (0 to 1050), print their sum. You will receive two numbers (0 to 1050), print their sum.
