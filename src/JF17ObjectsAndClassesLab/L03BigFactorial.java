@@ -1,4 +1,4 @@
-package JF16ObjectsAndClassesLab;
+package JF17ObjectsAndClassesLab;
 
 /*
 You will receive N - the number in the range [0 - 1000]. Calculate the Factorial of N and print the result
